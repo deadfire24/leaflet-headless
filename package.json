@@ -1,37 +1,37 @@
 {
-  "name": "node-leaflet-headless",
-  "version": "0.3.0",
-  "description": "Leaflet for node.",
-  "main": "index.js",
-  "browser": "browser.js",
-  "scripts": {
-    "lint": "eslint index.js src/* examples/*/index.js",
-    "test": "mocha -t 60000 -R spec test/test.js && npm run lint",
-    "release": "mversion patch -m",
-    "release-minor": "mversion minor -m"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:jieter/leaflet-headless.git"
-  },
-  "author": "Jan Pieter Waagmeester <jieter@jieter.nl>",
-  "license": "MIT",
-  "readmeFilename": "README.md",
-  "dependencies": {
-    "canvas": "^2.3.1",
-    "jsdom": "^13.2.0",
-    "leaflet": "^^1.4.0",
-    "leaflet-image": "^0.4.0",
-    "request": "^2.65.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-leaflet": "0.0.12",
-    "eslint": "^3.12.2",
-    "pixelmatch": "^4.0.2",
-    "pngjs": "3.3.3",
-    "mapbox.js": "^3.0.1",
-    "mocha": "^2.2.1",
-    "mversion": "^1.10.1"
-  }
+    "name": "node-leaflet-headless",
+    "version": "0.3.0",
+    "description": "Leaflet that runs server-side with node",
+    "main": "index.js",
+    "browser": "browser.js",
+    "scripts": {
+        "lint": "eslint index.js src/* examples/*/index.js",
+        "test": "mocha -t 60000 -R spec test/test.js && npm run lint",
+        "release": "mversion patch -m",
+        "release-minor": "mversion minor -m"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:chill-pills/leaflet-headless.git"
+    },
+    "author": "Jan Pieter Waagmeester <jieter@jieter.nl>",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "dependencies": {
+        "canvas": "^2.3.1",
+        "jsdom": "^13.2.0",
+        "leaflet": "^^1.4.0",
+        "node-leaflet-image": "^0.4.3",
+        "request": "^2.65.0"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-leaflet": "0.0.12",
+        "eslint": "^3.12.2",
+        "pixelmatch": "^4.0.2",
+        "pngjs": "3.3.3",
+        "mapbox.js": "^3.0.1",
+        "mocha": "^2.2.1",
+        "mversion": "^1.10.1"
+    }
 }
